@@ -12,9 +12,4 @@ package gitproject;
        sLabel = _sNew;
        lblName.setText(sLabel);
        }  
-    void UpdateBackground(String _sNew) {
-       sLabel = _sNew;
-       setBackground(Color.red);
-
-    } 
 }
