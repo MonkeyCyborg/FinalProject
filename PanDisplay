@@ -1,0 +1,20 @@
+package gitproject;
+    import javax.swing.*;
+    import java.awt.*;
+    public class PanDisp extends JPanel {
+       private JLabel lblName;
+       private String sLabel;
+    public PanDisp () {
+       lblName = new JLabel("Cookie Clicker");
+       add(lblName);
+    }
+    void UpdateLabel(String _sNew) {
+       sLabel = _sNew;
+       lblName.setText(sLabel);
+       }  
+    void UpdateBackground(String _sNew) {
+       sLabel = _sNew;
+       setBackground(Color.red);
+
+    } 
+}
