@@ -1,0 +1,35 @@
+package gitproject;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.File;
+import javax.imageio.ImageIO;
+import java.io.IOException;
+import javax.imageio.stream.FileImageInputStream;
+public class BtnCookie extends JPanel {
+PanDisp panDisp;
+    public BtnCookie (PanDisp _panDisp) {
+       panDisp = _panDisp;
+       setLayout(new GridLayout(1, 3));
+       JButton btnCookie = new JButton();
+   try {
+     Image img= ImageIO.read(new FileImageInputStream(new File("Cookie.jpg")));
+          btnCookie.setIcon(new ImageIcon(img));
+       } catch (IOException ex) {
+       }
+   add(btnCookie);
+       }   
+      // frame.add(btnCookie);      
+       class ColourChangeListener implements ActionListener {
+       public void actionPerformed(ActionEvent event) {   
+       }
+       }
+      int nCookies = 0;
+    private void btnCookieActionPerformed(java.awt.event.ActionEvent evt)
+    {  
+        nCookies++;
+    System.out.println(nCookies);
+    }
+}
+//}
