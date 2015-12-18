@@ -1,0 +1,14 @@
+package gitproject;
+import javax.swing.*;
+import java.awt.*;
+public class Layout extends JPanel {
+    PanDisp panDisp = new PanDisp();
+    Shop panLabelChange = new Shop(panDisp);
+    BtnCookie panColour = new BtnCookie(panDisp);
+    public Layout () {
+       setLayout(new BorderLayout());
+       add(panLabelChange, BorderLayout.SOUTH);
+       add(panDisp, BorderLayout.CENTER);   
+       add(panColour, BorderLayout.WEST);
+    }
+}
