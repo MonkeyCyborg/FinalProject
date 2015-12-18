@@ -1,0 +1,18 @@
+package gitproject;
+import java.awt.BorderLayout;
+import javax.swing.JFrame;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+public class GitProject {
+    public static void main(String[] args) {
+        
+    JFrame frame = new JFrame();
+       Layout panMain = new Layout();
+       frame.setSize(1000, 900);
+       frame.setTitle("Cookie");
+       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+       frame.add(panMain);
+       frame.setVisible(true);
+    }
+}
